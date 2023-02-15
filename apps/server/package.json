@@ -17,6 +17,7 @@
   },
   "dependencies": {
     "graphql-helix": "^1.13.0",
-    "koa": "^2.14.1"
+    "koa": "^2.14.1",
+    "mongoose": "^6.9.1"
   }
 }
