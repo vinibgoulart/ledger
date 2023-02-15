@@ -14,10 +14,12 @@ importers:
     specifiers:
       '@types/koa': ^2.13.5
       '@types/node': ^18.13.0
+      graphql-helix: ^1.13.0
       koa: ^2.14.1
       tsup: ^6.6.3
       tsx: ^3.12.3
     dependencies:
+      graphql-helix: 1.13.0
       koa: 2.14.1
     devDependencies:
       '@types/koa': 2.13.5
@@ -684,6 +686,12 @@ packages:
       merge2: 1.4.1
       slash: 3.0.0
     dev: true
+
+  /graphql-helix/1.13.0:
+    resolution: {integrity: sha512-cqDKMoRywKjnL0ZWCTB0GOiBgsH6d3nU4JGDF6RuzAyd35tmalzKpSxkx3NNp4H5RvnKWnrukWzR51wUq277ng==}
+    peerDependencies:
+      graphql: ^15.3.0 || ^16.0.0
+    dev: false
 
   /has-symbols/1.0.3:
     resolution: {integrity: sha512-l3LCuF6MgDNwTDKkdYGEihYjt5pRPbEg46rtlmnSPlUbgmB8LOIrKJbYYFBSbnPaJexMKtiPO8hmeRjRz2Td+A==}
