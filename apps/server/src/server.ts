@@ -1,16 +1,14 @@
 import http from 'node:http'
-import mongoose from 'mongoose'
 import { env } from './env'
 import { app } from './app'
+import { connectDatabase } from './database'
 
-mongoose.set('strictQuery', true)
+(async () => {
+  await connectDatabase()
 
-mongoose
-  .connect(env.MONGO_URI)
-  .then(() => {
-    http
-      .createServer(app.callback())
-      .listen(env.PORT, () => {
-        console.log(`Listening at ${env.PORT}`)
-      })
-  })
+  http
+    .createServer(app.callback())
+    .listen(env.PORT, () => {
+      console.log(`Listening at ${env.PORT}`)
+    })
+})()
