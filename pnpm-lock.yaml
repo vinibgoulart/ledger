@@ -16,6 +16,7 @@ importers:
       '@types/koa-bodyparser': ^4.3.10
       '@types/node': ^18.13.0
       dotenv: ^16.0.3
+      graphql: ^16.6.0
       graphql-helix: ^1.13.0
       koa: ^2.14.1
       koa-bodyparser: ^4.3.0
@@ -27,7 +28,8 @@ importers:
       zod: ^3.20.6
     dependencies:
       dotenv: 16.0.3
-      graphql-helix: 1.13.0
+      graphql: 16.6.0
+      graphql-helix: 1.13.0_graphql@16.6.0
       koa: 2.14.1
       koa-bodyparser: 4.3.0
       mongodb: 5.0.1
@@ -1610,10 +1612,17 @@ packages:
       slash: 3.0.0
     dev: true
 
-  /graphql-helix/1.13.0:
+  /graphql-helix/1.13.0_graphql@16.6.0:
     resolution: {integrity: sha512-cqDKMoRywKjnL0ZWCTB0GOiBgsH6d3nU4JGDF6RuzAyd35tmalzKpSxkx3NNp4H5RvnKWnrukWzR51wUq277ng==}
     peerDependencies:
       graphql: ^15.3.0 || ^16.0.0
+    dependencies:
+      graphql: 16.6.0
+    dev: false
+
+  /graphql/16.6.0:
+    resolution: {integrity: sha512-KPIBPDlW7NxrbT/eh4qPXz5FiFdL5UbaA0XUNz2Rp3Z3hqBSkbj0GVjwFDztsWVauZUWsbKHgMg++sk8UX0bkw==}
+    engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
     dev: false
 
   /has-symbols/1.0.3:
