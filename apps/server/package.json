@@ -7,6 +7,7 @@
     "test": "vitest",
     "build": "tsup src",
     "dev": "tsx watch src/server.ts",
+    "seed:bankaccount": "tsx scripts/seed/seedBankAccount.ts",
     "gen-schema": "tsx scripts/generateOrUpdateSchema.ts"
   },
   "keywords": [],
