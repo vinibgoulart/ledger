@@ -1,3 +1,20 @@
 type Query {
   foo: String!
 }
+
+type Mutation {
+  transactionMutation(input: TransactionInput!): TransactionPayload
+}
+
+type TransactionPayload {
+  transactionId: String
+  error: String
+  clientMutationId: String
+}
+
+input TransactionInput {
+  fromAccountId: String!
+  toAccountId: String!
+  amount: Float!
+  clientMutationId: String
+}
