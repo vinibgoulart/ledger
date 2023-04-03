@@ -13,12 +13,11 @@ cd ledger
 pnpm install
 ```
 
-### Create .env based on .env.example variables
+### Copy .env.example
 ```env
-// apps/server/.env
-PORT=
-MONGO_URI=
+pnpm run copy:envs
 ```
+After copying, fill in the variables
 
 ### Run bankAccount seeder
 ```bash
